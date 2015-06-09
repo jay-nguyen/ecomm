@@ -402,6 +402,22 @@ header a:link, header a:visited {
     text-decoration: none;
 }
 
+/* ==========================================================================
+   search-keyword
+   ========================================================================== */
+
+#search-keyword {
+    padding: 30px 0 30px;
+}
+
+#search-keyword h1 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+#search-keyword h1 span {
+    font-weight: bold;
+}
 
 
 /* ==========================================================================
@@ -478,6 +494,11 @@ header a:link, header a:visited {
     margin-top: -110px;
 }
 
+/* === search-results === */
+
+#search-results {
+    text-align: left;
+}
 
 /* === products === */
 
@@ -498,6 +519,10 @@ header a:link, header a:visited {
 #listings .product {
     margin-bottom: 30px;
     margin-right: 100px;
+}
+
+#search-results .product {
+    margin-bottom: 30px;
 }
 
 .product .instock {
