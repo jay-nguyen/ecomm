@@ -753,7 +753,7 @@ header a:link, header a:visited {
 }
 
 /* ==========================================================================
-   order-details & order-history & personal-details
+   order-details & order-history & personal-details & shopping-cart
    ========================================================================== */
 #order-details,
 #order-history,
@@ -777,7 +777,7 @@ header a:link, header a:visited {
 }
 
 #order-details h1, #order-details h2,
-#order-history h1 {
+#order-history h1, #shopping-cart h1 {
     color: #2e373f;
     font-weight: normal;
     margin-bottom: 20px;
@@ -785,7 +785,8 @@ header a:link, header a:visited {
 }
 
 #order-details h1,
-#order-history h1 {
+#order-history h1, 
+#shopping-cart h1 {
     font-size: 24px;
 }
 
@@ -801,20 +802,40 @@ header a:link, header a:visited {
 }
 
 #order-details table,
-#order-history table {
+#order-history table,
+#shopping-cart table {
     color: #5f5e5e;
     width: 870px;
     margin-bottom: 40px;
 }
 
+#shopping-cart table {
+    width: 1080px;
+}
+
 #order-details th,
-#order-history th {
+#order-history th,
+#shopping-cart th {
     padding: 20px;
 }
 
 #order-details td,
-#order-history td {
+#order-history td,
+#shopping-cart td {
     padding: 10px;
+}
+
+#shopping-cart .qty {
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 20px;
+}
+
+#shopping-cart td span {
+    display: block;
 }
 
 #order-history a:link, #order-history a:visited {
@@ -988,7 +1009,7 @@ footer #my-account, footer #info {
 .tertiary-btn {
     background-color: #f6f6f6;
     color: #5f5e5e;
-    padding: 15px 35px;
+    padding: 10px;
     border-radius: 5px;
     -moz- border-radius: 5px;
     -webkit- border-radius: 5px;
@@ -999,6 +1020,11 @@ footer #my-account, footer #info {
 /* IE7 Padding Fix */
 .lt-ie8 .default-btn, .lt-ie8 .secondary-btn, .lt-ie8 .tertiary-btn {
     display: inline-block;
+}
+/* IE7 & 8 Tertiary Button Fix */
+.lt-ie9 .tertiary-btn {
+    position: relative;
+    top: 10px;
 }
 
 .cart-btn {
