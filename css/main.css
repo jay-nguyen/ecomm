@@ -455,9 +455,10 @@ header a:link, header a:visited {
     margin-bottom: 20px;
 }
 
-/* === categories === */
+/* === categories-menu & my-account-menu === */
 
-#categories-menu {
+#categories-menu, 
+#my-account-menu {
     width: 180px;
     border-right: 1px solid #aaa;
     text-align: left;
@@ -466,16 +467,19 @@ header a:link, header a:visited {
     *zoom: 1;
 }
 
-#categories-menu h3 {
+#categories-menu h3,
+#my-account-menu h3 {
     color: #c3c3c3;
 }
 
-#categories-menu ul {
+#categories-menu ul,
+#my-account-menu ul {
     margin-left: 20px;
     list-style-image: url(../img/right-arrow.gif);
 }
 
-#categories-menu a:link, #categories-menu a:visited {
+#categories-menu a:link, #categories-menu a:visited,
+#my-account-menu a:link, #my-account-menu a:visited {
     color: #2e373f;
     text-decoration: none;
 }
@@ -623,7 +627,7 @@ header a:link, header a:visited {
 }
 
 /* ==========================================================================
-   New Account
+   New Account & personal-detail
    ========================================================================== */
 #new-account {
     width: 400px;
@@ -636,22 +640,26 @@ header a:link, header a:visited {
     color: #2e373f;
 }
 
-#new-account h1 {
+#new-account h1,
+#personal-details h1 {
     font-size: 16px;
     font-weight: normal;
     margin-bottom: 15px;
 }
 
-#new-account label {
+#new-account label,
+#personal-details label {
     display: block;
     margin-bottom: 5px;
 }
 
-#new-account p {
+#new-account p,
+#personal-details p {
     font-size: 12px;
 }
 
-#new-account p input {
+#new-account p input,
+#personal-details p input {
     width: 300px;
     border: 1px solid #eee;
     padding: 10px;
@@ -660,7 +668,8 @@ header a:link, header a:visited {
     -webkit-border-radius: 10px;
 }
 
-#new-account .required-fields {
+#new-account .required-fields,
+#personal-details .required-fields {
     color: #5daad0;
 }
 
@@ -708,6 +717,130 @@ header a:link, header a:visited {
     margin-bottom: 50px;
 }
 
+
+/* ==========================================================================
+   contact-us
+   ========================================================================== */
+
+#contact-us {
+    width: 400px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    color: #2e373f;
+}
+
+#contact-us h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+#contact-us p span {
+    font-weight: bold;
+}
+
+#contact-us a:link, #contact-us a:visited {
+    color: #5daad0;
+    text-decoration: none;
+}
+
+.note {
+    font-size: 12px;
+}
+
+/* ==========================================================================
+   order-details & order-history & personal-details
+   ========================================================================== */
+#order-details,
+#order-history,
+#personal-details {
+    text-align: left;
+    width: 900px;
+    float: right;
+    margin-bottom: 60px;
+    padding-left: 20px;
+}
+#order-history {
+    margin-bottom: 0px;
+}
+
+
+/* === IE7 Margin Fix === */
+.lt-ie8 #order-details,
+.lt-ie8 #order-history,
+.lt-ie8 #personal-details {
+    margin-top: -120px;
+}
+
+#order-details h1, #order-details h2,
+#order-history h1 {
+    color: #2e373f;
+    font-weight: normal;
+    margin-bottom: 20px;
+    width: 840px;
+}
+
+#order-details h1,
+#order-history h1 {
+    font-size: 24px;
+}
+
+#order-details h2 {
+    font-size: 16px;
+    background-color: #f6f6f6;
+    padding: 15px;
+}
+
+#order-details p {
+    color: #5f5e5e;
+    margin-left: 50px;
+}
+
+#order-details table,
+#order-history table {
+    color: #5f5e5e;
+    width: 870px;
+    margin-bottom: 40px;
+}
+
+#order-details th,
+#order-history th {
+    padding: 20px;
+}
+
+#order-details td,
+#order-history td {
+    padding: 10px;
+}
+
+#order-history a:link, #order-history a:visited {
+    color: #5daad0;
+    text-decoration: none;
+}
+
+.total {
+    text-align: right;
+}
+
+.total span {
+    font-weight: bold;
+}
+
+.finalized {
+    color: #9dbb6f;
+}
+
+.pending {
+    color: #ed7840;
+}
+
+.aborted {
+    color: #de310f;
+}
 
 /* ==========================================================================
    Footer
@@ -852,8 +985,19 @@ footer #my-account, footer #info {
     z-index: 1;
 }
 
+.tertiary-btn {
+    background-color: #f6f6f6;
+    color: #5f5e5e;
+    padding: 15px 35px;
+    border-radius: 5px;
+    -moz- border-radius: 5px;
+    -webkit- border-radius: 5px;
+    box-shadow: 0px 4px 0px #b8b8b8;
+    text-decoration: none;
+}
+
 /* IE7 Padding Fix */
-.lt-ie8 .default-btn, .lt-ie8 .secondary-btn {
+.lt-ie8 .default-btn, .lt-ie8 .secondary-btn, .lt-ie8 .tertiary-btn {
     display: inline-block;
 }
 
